@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f7f7f7;
+}
+
+main {
+  width: 100%;
+  max-width: 1170px;
+  margin: auto !important;
+}
+
+.i-am {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+.my-name {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 900;
+  margin: 4px 0;
+}
+
+.my-designation {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.my-bio {
+  margin-top: 12px;
+  width: 60%;
+}
+
+.hero img {
+  width: 70%;
+}
+
+.hero button {
+  margin-top: 20px;
+}
+
+#nav-hero {
+  background-image: url("../public/bg-effect-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar-scrolled {
+  background-color: #fff;
+  transition: 0.4s all;
+}
+
+/* img animation */
+img.vert-move {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+img.vert-move {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+/* aboout section css */
+.section-heading h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 5;
+  text-align: center;
+}
+
+.section-heading p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #6b7280;
+  margin-bottom: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.section-heading p::before {
+  position: absolute;
+  content: url("../images/pencil-scratch.png");
+  bottom: -8px;
+  width: 20px; /* Adjust the width as needed */
+  height: 15px; /* Adjust the height as needed */
+  z-index: -10;
+}
+
+.width-half {
+  width: 50%;
+}
+
+.width-half img {
+  width: 60%;
+}
+
+.about-i-am {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .width-half {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .my-name {
+    font-size: 2rem;
+  }
+
+  .i-am {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 500;
+  }
+}
+
+/* up arrow */
+.up-arrow {
+  transition: 0.4s all;
+  background: #000;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  position: fixed;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  line-height: 55px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out; /* Add a transition effect */
+}
+
+/* Styling when the "up-arrow" element is displayed */
+.up-arrow.active {
+  opacity: 1; /* Show the element */
+}
+
+/* scrolbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #58595d;
+  border-radius: 10px;
+}
+
+/* typewriter.css */
+.typewriter-cursor {
+  border-right: 2px solid #000; /* Adjust the border properties to control cursor thickness and color */
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
