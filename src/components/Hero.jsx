@@ -33,11 +33,7 @@ export default function Hero() {
           >
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
               <a href="/" className="flex items-center">
-                <img
-                  src="../../public/logo.png"
-                  className="h-8 mr-3"
-                  alt="Logo"
-                />
+                <img src="./logo.png" className="h-8 mr-3" alt="Logo" />
               </a>
               <div className="flex md:order-2">
                 <a href="#contact">
@@ -165,7 +161,7 @@ export default function Hero() {
               </div>
               <div className="right flex items-center justify-center">
                 <img
-                  src="../../public/main.png"
+                  src="./main.png"
                   alt="Hero Img"
                   className="hero-img vert-move"
                 />
