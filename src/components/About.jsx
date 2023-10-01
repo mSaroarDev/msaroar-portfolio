@@ -11,7 +11,7 @@ export default function About() {
           <div className="section-body w-full mt-10">
             <div className="flex items-center justify-between w-full">
               <div className="width-half hidden md:block">
-                <img src="../../public/main.png" alt="My Photo" />
+                <img src="./main.png" alt="My Photo" />
               </div>
               <div className="width-half p-4">
                 <p className="i-am">Hello, I am</p>

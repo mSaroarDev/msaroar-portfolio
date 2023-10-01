@@ -9,11 +9,7 @@ export default function Footer() {
                 href="https://flowbite.com/"
                 className="flex items-center mb-4 sm:mb-0"
               >
-                <img
-                  src="../../public/logo.png"
-                  className="h-8 mr-3"
-                  alt="Logo"
-                />
+                <img src="./public/logo.png" className="h-8 mr-3" alt="Logo" />
                 {/* <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                   Flowbite
                 </span> */}
