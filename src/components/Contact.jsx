@@ -11,7 +11,7 @@ export default function Contact() {
           <div className="section-body w-full mt-10">
             <div className="flex items-center justify-between w-full">
               <div className="width-half hidden md:block">
-                <img src="./public/main.png" alt="My Photo" />
+                <img src="./main.png" alt="My Photo" />
               </div>
               <div className="width-half p-4">
                 <div className="bg-white p-10 rounded-2xl shadow-md h-full w-full">
